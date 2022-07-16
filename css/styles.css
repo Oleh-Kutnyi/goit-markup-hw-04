@@ -11,6 +11,7 @@
     --team-background-color: #F5F4FA;
     --pure-white-color: #FFFFFF;
     --another-white-color: #ECECEC;
+    --logo-color--:#AFB1B8;
 
   /* formula */
 
@@ -356,6 +357,18 @@ h2 {
 }
 
 
+/* Client Section */
+
+.client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--title-color);
+}
+
 
 /* Portfolio.HTML */
 /* Main */
@@ -439,6 +452,7 @@ h2 {
 
 
 
+
 /* Footer  */
 
 .footer-section {
@@ -449,8 +463,14 @@ h2 {
 .footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between ;
+    justify-content: space-between;
     
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
 
 
@@ -503,6 +523,20 @@ color: var(--pure-white-color);
     color: var(--blue-color-text);
 }
 
+.social-footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: var(--pure-white-color);
+}
 
 
 /* Icons Settings */
@@ -528,5 +562,76 @@ color: var(--pure-white-color);
 }
 
 .social-team-icon {
-    fill: #AFB1B8;
+    fill: var(--logo-color--);
 }
+
+.social-team-link:hover {
+    background-color: var(--blue-color-text);
+
+}
+
+.social-team-link:hover   .social-team-icon {
+    fill: var(--pure-white-color);
+}
+
+/* Footer Icons */
+
+.social-footer-list {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+}
+
+.social-footer-icon {
+    fill: var(--pure-white-color);
+}
+
+.social-footer-link:hover {
+    background-color: var(--blue-color-text);
+}
+
+.social-footer-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: var(--pure-white-color);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+}
+
+/* Client Icons */
+
+.client-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+}
+
+.client-icon {
+    fill: var(--logo-color--) ;
+}
+
+.client-link {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 170px;
+            height: 92px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+}
+
+
+.client-link:hover .client-icon {
+    border:var(--blue-color-text);
+    fill: var(--blue-color-text);
+}
+
+
+
+
