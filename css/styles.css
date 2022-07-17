@@ -131,7 +131,7 @@ h2 {
 }
 
 .header-item:hover,
-.header-item:focus {
+.header-link:focus {
     color: var(--blue-color-text);
 }
 
@@ -593,6 +593,14 @@ color: var(--pure-white-color);
 
 }
 
+.social-team-link:focus {
+    background-color: var(--blue-color-text);
+}
+
+.social-team-link:focus .social-team-icon{
+    fill: var(--pure-white-color);
+}
+
 .social-team-link:hover   .social-team-icon {
     fill: var(--pure-white-color);
 }
@@ -651,9 +659,23 @@ color: var(--pure-white-color);
 
 
 .client-link:hover .client-icon {
-    border:var(--blue-color-text);
     fill: var(--blue-color-text);
 }
+
+
+.client-link:hover {
+    border-color: var(--blue-color-text);
+}
+
+.client-link:focus .client-icon {
+    fill: var(--blue-color-text);
+}
+
+.client-link:focus {
+    border-color: var(--blue-color-text);
+}
+
+
 
 /* Underbox Icons */
 .underbox-icon-list {
@@ -661,9 +683,11 @@ color: var(--pure-white-color);
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 30px;
 
 }
 .underbox-link {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -678,7 +702,7 @@ color: var(--pure-white-color);
     fill: #757575;
 }
 
-.header-icon:hover {
+.header-icon:hover, :focus {
     fill: var(--blue-color-text);
 }
 
