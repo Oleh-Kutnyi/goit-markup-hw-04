@@ -420,7 +420,8 @@ h2 {
 }
 
 .btn-prtf:hover,
-.btn-prtf:active {
+.btn-prtf:active,
+.btn-prtf:focus {
     color: var(--pure-white-color);
     background: var(--blue-color-text);
     border: var(--blue-color-text) 4px;
